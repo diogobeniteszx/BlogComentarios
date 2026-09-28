@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Um espaço para ler, trocar ideias e conversar sobre tecnologia e criatividade.">
+  <title>Entre Linhas — Blog com comentários</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container py-3" aria-label="Navegação principal">
+      <a class="navbar-brand brand" href="#inicio"><span class="brand-mark">e.</span> entre linhas</a>
+      <a class="nav-link d-none d-sm-inline" href="#artigos">Artigos <span aria-hidden="true">↘</span></a>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> IDEIAS QUE APROXIMAM</p>
+        <h1>Uma boa conversa<br>começa com <em>uma ideia.</em></h1>
+        <p class="hero-text">Leituras sobre tecnologia, criatividade e as pequenas coisas que fazem a diferença. Leia, comente e faça parte da conversa.</p>
+        <a class="btn btn-dark rounded-pill px-4 py-2" href="#artigos">Explorar artigos <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-sun"></div><div class="art-line art-line-one"></div><div class="art-line art-line-two"></div>
+        <div class="art-note"><span>LEIA</span><strong>com<br>calma.</strong><i>✳</i></div>
+        <span class="art-caption">CADERNO DE IDEIAS · Nº 01</span>
+      </div>
+    </section>
+
+    <section class="articles-section" id="artigos">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow">DO NOSSO CADERNO</p><h2>Últimas leituras<span>.</span></h2></div>
+          <p class="section-intro">Artigos para pensar, descobrir<br class="d-none d-md-block"> e compartilhar.</p>
+        </div>
+        <div class="row g-4" id="article-list" aria-live="polite"></div>
+        <nav class="pagination-wrap" aria-label="Paginação dos artigos">
+          <span id="page-status" class="page-status"></span>
+          <ul class="pagination mb-0" id="pagination"></ul>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center gap-2">
+      <a class="brand footer-brand" href="#inicio"><span class="brand-mark">e.</span> entre linhas</a>
+      <p class="mb-0">Feito para boas ideias e boas conversas. <span>© 2025</span></p>
+    </div>
+  </footer>
+</body>
+</html>
